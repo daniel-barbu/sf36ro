@@ -6,7 +6,6 @@
 </head>
 <body>
   <div style="position:absolute; width:100%; text-align:center; background:linear-gradient(180deg, #608ED3, transparent);">
-    <button onclick="trad()">trad()</button>
     Traducere produsă și implementată de DANIEL BARBU (West Network) pentru Diaverum România, 2020
   </div>
   <iframe id="iframe" src="https://www.orthotoolkit.com/sf-36/" height="100%" width="100%"></iframe>
@@ -17,7 +16,6 @@
   console.log('In cazul in care site-ul SF36.DANIEL-BARBU.CF s-a incarcat si primiti o eroare de tip "Not Found", WWW.ORTHOTOOLKIT.COM/SF-36 este INDISPONIBIL.');
   //document.getElementById("iframe").contentWindow.
   
-function trad() {
   document.getElementsByClassName("App")[0].childNodes[0].childNodes[10].innerHTML="A";
 
   document.getElementById("iframe").contentWindow.document.getElementsByClassName("App")[0].childNodes[0].childNodes[11].childNodes[0].childNodes[0].innerHTML="Q1";
@@ -72,7 +70,6 @@ function trad() {
   document.getElementsByClassName("App")[0].childNodes[0].childNodes[50].childNodes[0].childNodes[0].innerHTML="Q34";
   document.getElementsByClassName("App")[0].childNodes[0].childNodes[51].childNodes[0].childNodes[0].innerHTML="Q35";
   document.getElementsByClassName("App")[0].childNodes[0].childNodes[52].childNodes[0].childNodes[0].innerHTML="Q36";
-}
 </script>
 <style>
   body {margin:0px; overflow:hidden;}
