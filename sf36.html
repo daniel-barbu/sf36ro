@@ -1,5 +1,6 @@
 <html>
 <body>
+  a1
   <iframe id="iframe" src="https://www.orthotoolkit.com/sf-36/" height="100%" width="100%"></iframe>
 </body>
 </html>
@@ -8,7 +9,7 @@
   console.log('In cazul in care site-ul SF36.DANIEL-BARBU.CF s-a incarcat si primiti o eroare de tip "Not Found", WWW.ORTHOTOOLKIT.COM/SF-36 este INDISPONIBIL.');
   //document.getElementById("iframe").contentWindow.
 
-  document.getElementsByClassName("App")[0].childNodes[0].childNodes[0].innerHTML+=" -- traducerea DANIEL BARBU";
+  document.getElementById("iframe").contentWindow.document.getElementsByClassName("App")[0].childNodes[0].childNodes[0].innerHTML+=" -- traducerea DANIEL BARBU";
 
   document.getElementsByClassName("App")[0].childNodes[0].childNodes[10].innerHTML="A";
 
