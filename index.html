@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="canonical" href="https://orthotoolkit.com/sf-36/" />
+    <script type="text/javascript" async="" src="script.js"></script>
+    <script>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      (window.dataLayer = window.dataLayer || []), gtag("js", new Date()), gtag("config", "UA-110490779-1");
+    </script>
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="https://www.orthotoolkit.com/sf-36/manifest.json" />
+    <link rel="shortcut icon" href="https://www.orthotoolkit.com/sf-36/favicon.ico" />
+    <title>Free online SF-36 score calculator - OrthoToolKit</title>
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div>
+        <div>
+          <nav class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <a href="https://orthotoolkit.com/"><img src="orthotoolkit.png" alt="orthotoolkit logo" style="padding: 15px; width: 200px;" /></a>
+                <button type="button" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+              </div>
+              <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li role="presentation" class=""><a href="https://orthotoolkit.com/">Home</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="content">
+          <div class="App">
+            <div>
+              <h1>SF-36 -- OrthoToolKit</h1>
+              <p></p>
+              <div role="tablist" class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <a aria-expanded="false" class="collapsed" role="button" href="https://www.orthotoolkit.com/sf-36/#">
+                        <div style="display: block;">About the score <span class="glyphicon glyphicon-chevron-down"></span></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="panel-collapse collapse">
+                    <div class="panel-body">
+                      Originally published in 1992 in <i>Medical Care</i>, the 36-item Short Form Health Survey (SF-36) is a measure of health-related quality-of-life. It is a subset of questions from longer instruments that were used in
+                      the Medical Outcomes Study. There have been a variety of iterations of this tool, and the version presented here is more specifically known as the RAND SF-36.
+                      <p></p>
+                      The SF-36, as described in the name, is a 36-item patient-reported questionnaire that covers eight health domains: physical functioning (10 items), bodily pain (2 items), role limitations due to physical health
+                      problems (4 items), role limitations due to personal or emotional problems (4 items), emotional well-being (5 items), social functioning (2 items), energy/fatigue (4 items), and general health perceptions (5 items).
+                      Scores for each domain range from 0 to 100, with a higher score defining a more favorable health state.
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <a aria-expanded="false" class="collapsed" role="button" href="https://www.orthotoolkit.com/sf-36/#">
+                        <div style="display: block;">Supporting literature <span class="glyphicon glyphicon-chevron-down"></span></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <u>Original Literature:</u>
+                      <p></p>
+                      Ware Jr, John E., and Cathy Donald Sherbourne. "The MOS 36-item short-form health survey (SF-36): I. Conceptual framework and item selection." Medical care (1992): 473-483.<br />
+                      Hays, Ron D., Cathy Donald Sherbourne, and Rebecca M. Mazel. "The rand 36‐item health survey 1.0." Health economics 2.3 (1993): 217-227.<br />
+                      <u>Validation Literature:</u>
+                      <p></p>
+                      Söderman, Peter, and Henrik Malchau. "Is the Harris hip score system useful to study the outcome of total hip replacement?." Clinical orthopaedics and related research 384 (2001): 189-197.<u>Additional Literature:</u>
+                      <p></p>
+                      Laucis, Nicholas C., Ron D. Hays, and Timothy Bhattacharyya. "Scoring the SF-36 in orthopaedics: a brief guide." The Journal of bone and joint surgery. American volume 97.19 (2015): 1628.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <a aria-expanded="false" class="collapsed" role="button" href="https://www.orthotoolkit.com/sf-36/#">
+                        <div style="display: block;">About the score developer <span class="glyphicon glyphicon-chevron-down"></span></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="panel-collapse collapse">
+                    <div class="panel-body">
+                      Dr. Cathy Sherbourne is a senior policy research at the RAND Corporation. She specializes in health outcome measurements for adults and children, with a focus on mental health issues.
+                      <p></p>
+                      To view her publications, please visit <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=sherbourne_cd%5Bau%5D">PubMed</a>.<br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p></p>
+              <p></p>
+              Visual Score (%)<br />
+              <canvas width="320" height="250" style="width: 320px; height: 250px;"></canvas>
+              <div class="well well-sm">
+                <b>Physical functioning</b>: 100 % <br />
+                <b>Role limitations due to physical health</b>: 100 % <br />
+                <b>Role limitations due to emotional problems</b>: 100 % <br />
+                <b>Energy/fatigue</b>: 100 % <br />
+                <b>Emotional well-being</b>: 100 % <br />
+                <b>Social functioning</b>: 100 % <br />
+                <b>Pain</b>: 100 % <br />
+                <b>General health</b>: 100 % <br />
+                <b>Health change</b>: 100 % <br />
+              </div>
+              <div><button>Click here to print a report</button></div>
+              <h3>Choose one option for each questionnaire item.</h3>
+              <div>
+                <div class="hidden-xs">
+                  <h4>1. In general, would you say your health is:</h4>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Excellent (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> Very good (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Good (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Fair (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Poor (5)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h4>1. In general, would you say your health is:</h4>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Excellent (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> Very good (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Good (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Fair (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Poor (5)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>2. <b>Compared to one year ago</b>, how would you rate your health in general <b>now</b>?</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom active">
+                      <input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Much better than one year ago (1)
+                    </label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> Somewhat better than one year ago (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> About the same (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Somewhat worse now than one year ago (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Much worse than one year ago (5)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>2. <b>Compared to one year ago</b>, how would you rate your health in general <b>now</b>?</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom active">
+                      <input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Much better than one year ago (1)
+                    </label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> Somewhat better than one year ago (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> About the same (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Somewhat worse now than one year ago (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Much worse than one year ago (5)</label>
+                  </div>
+                </div>
+              </div>
+              <h4>The following items are about activities you might do during a typical day. Does <b>your health now limit you</b> in these activities? If so, how much?</h4>
+              <div>
+                <div class="hidden-xs">
+                  <h5>3. <b>Vigorous activities</b>, such as running, lifting heavy objects, participating in strenuous sports.</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>3. <b>Vigorous activities</b>, such as running, lifting heavy objects, participating in strenuous sports.</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>4. <b>Moderate activities</b>, such as moving a table, pushing a vacuum cleaner, bowling, or playing golf</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>4. <b>Moderate activities</b>, such as moving a table, pushing a vacuum cleaner, bowling, or playing golf</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>5. Lifting or carrying groceries</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>5. Lifting or carrying groceries</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>6. Climbing <b>several</b> flights of stairs.</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>6. Climbing <b>several</b> flights of stairs.</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>7. Climbing <b>one</b> flight of stairs.</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>7. Climbing <b>one</b> flight of stairs.</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>8. Bending, kneeling, or stooping</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>8. Bending, kneeling, or stooping</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>9. Walking <b>more than a mile</b></h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>9. Walking <b>more than a mile</b></h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>10. Walking <b>several blocks</b></h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>10. Walking <b>several blocks</b></h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>11. Walking <b>one block</b></h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>11. Walking <b>one block</b></h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>12. Bathing or dressing yourself.</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>12. Bathing or dressing yourself.</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a lot (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Yes, limited a little (2)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No, not limited at all (3)</label>
+                  </div>
+                </div>
+              </div>
+              <h4>During the past <b>4 weeks</b>, have you had any of the following problems with your work or other regular daily activities <b>as a result of your physical health?</b></h4>
+              <div>
+                <h5>13. Cut down the <b>amount of time</b> you spent on work or other activities.</h5>
+                <div data-toggle="buttons" class="btn-group btn-group-justified">
+                  <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes (1)</label>
+                  <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No (2)</label>
+                </div>
+              </div>
+              <div>
+                <h5>14. <b>Accomplished less</b> than you would like</h5>
+                <div data-toggle="buttons" class="btn-group btn-group-justified">
+                  <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes (1)</label>
+                  <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No (2)</label>
+                </div>
+              </div>
+              <div>
+                <h5>15. <b>Were limited in the kind</b> of work or other activities.</h5>
+                <div data-toggle="buttons" class="btn-group btn-group-justified">
+                  <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes (1)</label>
+                  <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No (2)</label>
+                </div>
+              </div>
+              <div>
+                <h5>16. Had <b>difficulty</b> performing the work or other activities (for example, it took extra effort).</h5>
+                <div data-toggle="buttons" class="btn-group btn-group-justified">
+                  <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes (1)</label>
+                  <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No (2)</label>
+                </div>
+              </div>
+              <h4>During the <b>past 4 weeks</b>, have you had any of the following problems with your work or other regular daily activities <b>as a result of any emotional problems</b> (such as feeling depressed or anxious)?</h4>
+              <div>
+                <h5>17. Cut down the <b>amount of time</b> you spent on work or other activities.</h5>
+                <div data-toggle="buttons" class="btn-group btn-group-justified">
+                  <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes (1)</label>
+                  <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No (2)</label>
+                </div>
+              </div>
+              <div>
+                <h5>18. <b>Accomplished less</b> than you would like.</h5>
+                <div data-toggle="buttons" class="btn-group btn-group-justified">
+                  <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes (1)</label>
+                  <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No (2)</label>
+                </div>
+              </div>
+              <div>
+                <h5>19. Didn't do work or other activities as <b>carefully</b> as usual.</h5>
+                <div data-toggle="buttons" class="btn-group btn-group-justified">
+                  <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Yes (1)</label>
+                  <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> No (2)</label>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>20. During the <b>past 4 weeks</b>, to what extent has your physical health or emotional problems interfered with your normal social activities with family, friends, neighbors, or groups?</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Not at all (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> Slightly (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Moderately (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Quite a bit (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Extremely (5)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>20. During the <b>past 4 weeks</b>, to what extent has your physical health or emotional problems interfered with your normal social activities with family, friends, neighbors, or groups?</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Not at all (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> Slightly (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Moderately (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Quite a bit (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Extremely (5)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>21. How much <b>bodily</b> pain have you had during the <b>past 4 weeks</b>?</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> None (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> Very mild (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> Mild (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> Moderate (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> Severe (5)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Very severe (6)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>21. How much <b>bodily</b> pain have you had during the <b>past 4 weeks</b>?</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> None (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> Very mild (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> Mild (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> Moderate (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> Severe (5)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Very severe (6)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>22. During the <b>past 4 weeks</b>, how much did pain interfere with your normal work (including both work outside the home and housework)?</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Not at all (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> A little bit (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Moderately (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Quite a bit (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Extremely (5)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>22. During the <b>past 4 weeks</b>, how much did pain interfere with your normal work (including both work outside the home and housework)?</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Not at all (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> A little bit (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Moderately (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Quite a bit (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Extremely (5)</label>
+                  </div>
+                </div>
+              </div>
+              <h4>These questions are about how you feel and how things have been with you <b>during the past 4 weeks</b>. For each question, please give the one answer that comes closest to the way you have been feeling.</h4>
+              <h4>How much of the time during the <b>past 4 weeks</b>...</h4>
+              <div>
+                <div class="hidden-xs">
+                  <h5>23. Did you feel full of pep?</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> None of the time (6)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>23. Did you feel full of pep?</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> None of the time (6)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>24. Have you been a nervous person?</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> None of the time (6)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>24. Have you been a nervous person?</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> None of the time (6)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>25. Have you felt so down in the dumps that nothing could cheer your up?</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> None of the time (6)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>25. Have you felt so down in the dumps that nothing could cheer your up?</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> None of the time (6)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>26. Have you felt calm and peaceful?</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> None of the time (6)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>26. Have you felt calm and peaceful?</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> None of the time (6)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>27. Did you have a lot of energy?</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> None of the time (6)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>27. Did you have a lot of energy?</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> None of the time (6)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>28. Have you felt downhearted and blue?</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> None of the time (6)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>28. Have you felt downhearted and blue?</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> None of the time (6)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>29. Did you feel worn out?</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> None of the time (6)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>29. Did you feel worn out?</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> None of the time (6)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>30. Have you been a happy person?</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> None of the time (6)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>30. Have you been a happy person?</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> None of the time (6)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>31. Did you feel tired?</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> None of the time (6)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>31. Did you feel tired?</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="20" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="40" /> <span class="glyphicon glyphicon-unchecked"></span> A good bit of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="60" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="80" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (5)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> None of the time (6)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>32. During the past <b>4 weeks</b>, how much of the time has <b>your physical health or emotional problems</b> interfered with your social activities (like visiting with friends, relatives, etc.)?</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> None of the time (5)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>32. During the past <b>4 weeks</b>, how much of the time has <b>your physical health or emotional problems</b> interfered with your social activities (like visiting with friends, relatives, etc.)?</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> All of the time (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Most of the time (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Some of the time (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> A little of the time (4)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> None of the time (5)</label>
+                  </div>
+                </div>
+              </div>
+              <h4>How TRUE or FALSE is <b>each</b> of the following statements for you.</h4>
+              <div>
+                <div class="hidden-xs">
+                  <h5>33. I seem to get sick a little easier than other people</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Definitely true (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly true (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Don't know (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly false (4)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Definitely false (5)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>33. I seem to get sick a little easier than other people</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Definitely true (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly true (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Don't know (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly false (4)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Definitely false (5)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>34. I am as healthy as anybody I know</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Definitely true (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly true (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Don't know (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly false (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Definitely false (5)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>34. I am as healthy as anybody I know</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Definitely true (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly true (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Don't know (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly false (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Definitely false (5)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>35. I expect my health to get worse</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Definitely true (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly true (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Don't know (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly false (4)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Definitely false (5)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>35. I expect my health to get worse</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Definitely true (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly true (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Don't know (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly false (4)</label>
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Definitely false (5)</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="hidden-xs">
+                  <h5>36. My health is excellent</h5>
+                  <div data-toggle="buttons" class="btn-group btn-group-justified">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Definitely true (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly true (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Don't know (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly false (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Definitely false (5)</label>
+                  </div>
+                </div>
+                <div class="visible-xs">
+                  <h5>36. My health is excellent</h5>
+                  <div data-toggle="buttons" class="btn-group-vertical btn-block">
+                    <label type="button" class="btn btn-btn-custom active"><input name="options" type="radio" autocomplete="off" value="100" checked="" /> <span class="glyphicon glyphicon-check"></span> Definitely true (1)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="75" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly true (2)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="50" /> <span class="glyphicon glyphicon-unchecked"></span> Don't know (3)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="25" /> <span class="glyphicon glyphicon-unchecked"></span> Mostly false (4)</label>
+                    <label type="button" class="btn btn-btn-custom"><input name="options" type="radio" autocomplete="off" value="0" /> <span class="glyphicon glyphicon-unchecked"></span> Definitely false (5)</label>
+                  </div>
+                </div>
+              </div>
+              <br />
+              Visual Score (%)<br />
+              <canvas width="320" height="250" style="width: 320px; height: 250px;"></canvas>
+              <div class="well well-sm">
+                <b>Physical functioning</b>: 100 % <br />
+                <b>Role limitations due to physical health</b>: 100 % <br />
+                <b>Role limitations due to emotional problems</b>: 100 % <br />
+                <b>Energy/fatigue</b>: 100 % <br />
+                <b>Emotional well-being</b>: 100 % <br />
+                <b>Social functioning</b>: 100 % <br />
+                <b>Pain</b>: 100 % <br />
+                <b>General health</b>: 100 % <br />
+                <b>Health change</b>: 100 % <br />
+              </div>
+              <div><button>Click here to print a report</button></div>
+              <br />
+              <div>
+                <b><i>Pertinent positives:</i></b>
+                <p></p>
+                <div role="alert" class="alert alert-warning"><p></p></div>
+                <div role="alert" class="alert alert-danger">
+                  <p></p>
+                  <p></p>
+                </div>
+                <b><i>Pertinent negatives:</i></b>
+                <p></p>
+                <div role="alert" class="alert alert-success">
+                  Excellent general health; Much better health than one year ago; Vigorous activites not limited; Moderate activities not limited; Lifting or carrying groceries not limited; Climbing several flights of stairs not limited;
+                  Climbing one flight of stairs not limited; Bending/kneeling/stooping not limited; Walking more than one mile not limited; Walking several blocks not limited; Walking one block not limited; Bathing or dressing self not
+                  limited; No decrease in time spent on work due to physical health; Has not accomplished less than would like due to physical health; Was not limited in work due to physical health; No difficulty performing work due to
+                  physical health; No decrease in time spent on work due to emotional problems; Has not accomplished less than would like due to emotional problems; No difference in carefulness of work due to emotional problems; No
+                  interference of health or emotional problems with social activities; No bodily pain; No interference of pain with work; Always feels full of pep; Never a nervous person; Never felt so down in the dumps that nothing could
+                  cheer up; Always felt calm and peaceful; Always had a lot of energy; Never felt downhearted and blue; Never felt worn out; Always was a happy person; Never felt tired; Physical health or emotional problems did not
+                  interfere with social activities; "I seem to get sick a little easier than other people" -- definitely false; "I am as healthy as anybody I know" -- definitely true; "I expect my health to get worse" -- definitely false;
+                  "My health is excellent" -- definitely true;
+                </div>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="spacer"></div>
+          <div class="footer"></div>
+          <div class="spacer"></div>
+          <footer class="footer-2">
+            <a href="https://orthotoolkit.com/about-us/">About us</a> | <a href="https://orthotoolkit.com/contact-us/">Contact us</a> | <a href="https://orthotoolkit.com/faq/">FAQs</a><br />
+            The tools listed on this website do not substitute for the informed opinion of a licensed physician or other health care provider.<br />
+            All scores should be re-checked. Please see our full <a href="https://orthotoolkit.com/terms-of-use/">Terms of Use</a>.<br />
+            © OrthoToolKit | 2020<br />
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
